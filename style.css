@@ -4,15 +4,30 @@
   /*   box-sizing: border-box; */
 }
 body {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url(./bg.gif);
+  background-position: center;
+  background-size: cover;
 }
+
+.heading {
+  font-size: 30px;
+  width: 1000px;
+  margin-bottom: 140px;
+  text-align: center;
+  color: white;
+}
+
 #game {
   width: 500px;
   height: 200px;
   border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
 #character {
@@ -21,6 +36,7 @@ body {
   background-color: red;
   position: relative;
   top: 150px;
+  border-radius: 2px;
 }
 
 .animate {
@@ -50,6 +66,7 @@ body {
   top: 130px;
   left: 480px;
   animation: block 1s infinite linear;
+  border-radius: 50%;
 }
 
 @keyframes block {
